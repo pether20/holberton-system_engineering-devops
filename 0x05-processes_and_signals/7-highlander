@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script that displays To infinity and beyond indefinitely.
+funkill()
+{
+    echo "I am invincible!!!"
+}
+trap funkill SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
