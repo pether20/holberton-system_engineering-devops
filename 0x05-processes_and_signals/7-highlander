@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Script that displays To infinity and beyond indefinitely.
-funkill()
+fkill()
 {
     echo "I am invincible!!!"
 }
-trap funkill SIGTERM
+trap fkill SIGTERM
+
 while true
 do
     echo "To infinity and beyond"
