@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
-# Script receives kill signal from another script running in another terminal
-# Kill signal is caught and ignored; printing message instead
-
-msg()
+# Script that displays To infinity and beyond indefinitely.
+fkill()
 {
     echo "I am invincible!!!"
 }
-trap "msg" SIGTERM
-
+trap "fkill" SIGTERM
 while true
 do
     echo "To infinity and beyond"
     sleep 2
-
 done
